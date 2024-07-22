@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 <body class="bg-gray-100">
     <nav class="bg-gray-800 p-4 text-white">
         <div class="container mx-auto flex justify-between items-center">
-            <span id="greeting" class="text-xl font-semibold">Hello</span>
+            <span id="greeting" class="text-xl font-semibold">Ciao</span>
             <div class="lg:hidden">
                 <button id="menu-btn" class="text-white focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -27,38 +27,38 @@
             </div>
             <ul id="menu" class="hidden lg:flex lg:space-x-4">
                 <li><a href="index.html" class="block text-white hover:text-gray-300">Home</a></li>
-                <li><a href="profile.html" class="block text-white hover:text-gray-300">Profile</a></li>
-                <li><a href="daily.html" class="block text-white hover:text-gray-300">Daily Weight</a></li>
-                <li><a href="progress.html" class="block text-white hover:text-gray-300">Progress</a></li>
-                <li><a href="rewards.html" class="block text-white hover:text-gray-300">Rewards</a></li>
+                <li><a href="profile.html" class="block text-white hover:text-gray-300">Profilo</a></li>
+                <li><a href="daily.html" class="block text-white hover:text-gray-300">Peso Giornaliero</a></li>
+                <li><a href="progress.html" class="block text-white hover:text-gray-300">Progresso</a></li>
+                <li><a href="rewards.html" class="block text-white hover:text-gray-300">Premi</a></li>
             </ul>
         </div>
         <div id="mobile-menu" class="lg:hidden hidden">
             <ul class="bg-gray-800 p-4 space-y-2">
                 <li><a href="index.html" class="block text-white hover:text-gray-300">Home</a></li>
-                <li><a href="profile.html" class="block text-white hover:text-gray-300">Profile</a></li>
-                <li><a href="daily.html" class="block text-white hover:text-gray-300">Daily Weight</a></li>
-                <li><a href="progress.html" class="block text-white hover:text-gray-300">Progress</a></li>
-                <li><a href="rewards.html" class="block text-white hover:text-gray-300">Rewards</a></li>
+                <li><a href="profile.html" class="block text-white hover:text-gray-300">Profilo</a></li>
+                <li><a href="daily.html" class="block text-white hover:text-gray-300">Peso Giornaliero</a></li>
+                <li><a href="progress.html" class="block text-white hover:text-gray-300">Progresso</a></li>
+                <li><a href="rewards.html" class="block text-white hover:text-gray-300">Premi</a></li>
             </ul>
         </div>
     </nav>
     <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-bold mb-4">Profile</h1>
+        <h1 class="text-3xl font-bold mb-4">Profilo</h1>
         <form id="setup-form">
             <div class="mb-4">
-                <label for="username" class="block">Name:</label>
+                <label for="username" class="block">Nome:</label>
                 <input type="text" id="username" class="border p-2 w-full" required>
             </div>
             <div class="mb-4">
-                <label for="target-weight" class="block">Target Weight (kg):</label>
+                <label for="target-weight" class="block">Obiettivo Peso (kg):</label>
                 <input type="number" id="target-weight" class="border p-2 w-full" required>
             </div>
             <div class="mb-4">
-                <label for="final-reward" class="block">Reward for reaching target weight:</label>
+                <label for="final-reward" class="block">Premio per raggiungimento obiettivo:</label>
                 <input type="text" id="final-reward" class="border p-2 w-full" required>
             </div>
-            <button type="submit" class="bg-blue-500 text-white p-2 rounded">Save Profile</button>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded">Salva Profilo</button>
         </form>
     </div>
     <script>
@@ -75,7 +75,7 @@
         if (storedUsername) {
             const greeting = document.getElementById('greeting');
             if (greeting) {
-                greeting.textContent = `Hello, ${storedUsername}`;
+                greeting.textContent = `Ciao, ${storedUsername}`;
             }
         }
     </script>
