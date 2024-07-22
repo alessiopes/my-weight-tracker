@@ -14,16 +14,15 @@
 
 <body class="bg-gray-100">
     <nav class="bg-gray-800 p-4 text-white">
-        <span id="greeting" class="mr-4"></span>
-        <ul class="flex space-x-4">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="daily.html">Daily Weight</a></li>
-            <li><a href="progress.html">Progress</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
+        <span id="greeting" class="block mb-2 sm:mb-0 sm:inline mr-4"></span>
+        <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+            <li><a href="index.html" class="block text-white hover:text-gray-300">Home</a></li>
+            <li><a href="profile.html" class="block text-white hover:text-gray-300">Profile</a></li>
+            <li><a href="daily.html" class="block text-white hover:text-gray-300">Daily Weight</a></li>
+            <li><a href="progress.html" class="block text-white hover:text-gray-300">Progress</a></li>
+            <li><a href="rewards.html" class="block text-white hover:text-gray-300">Rewards</a></li>
         </ul>
     </nav>
-
     <div class="container mx-auto p-4">
         <h1 class="text-3xl font-bold mb-4">Record Your Weight</h1>
         <form id="weight-form">
